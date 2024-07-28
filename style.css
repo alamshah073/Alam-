@@ -1,0 +1,48 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    background:rgba(12,124,45,0.06);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.content{
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 7em auto;
+    height: 400px;
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 1fr;
+    grid-template-areas: 
+        '. . .'
+        '. big big';
+
+    }
+    
+.itemContent{
+    border-radius: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.itemContent:nth-of-type(1){ 
+    background-image: url(https://fps.cdnpk.net/home/cover/image-12-sm.webp?w=438&h=438);
+
+}
+.itemContent:nth-of-type(3){ 
+    background-image:url(https://cc-prod.scene7.com/is/image/CCProdAuthor/tti-marquee-desktop@2x?$png$&jpegSize=200&wid=1162);
+}
+.itemContent:nth-of-type(2){ 
+    background-color:#9ef0ec;
+}
+.itemContent:nth-of-type(4){ 
+    background-image:url(https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.itemContent:nth-of-type(5){ 
+    background-image:url(https://pixlr.com/images/index/ai-image-generator-one.webp);
+    grid-area: big;
+}
